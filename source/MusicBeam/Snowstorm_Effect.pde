@@ -6,7 +6,7 @@ class Snowstorm_Effect extends Effect
     super(controller, y);
 
     radiusSlider = cp5.addSlider("radius"+getName()).setGroup(controlGroup).setPosition(0, 5).setSize(395, 45);
-    radiusSlider.setRange(50, 200).setValue(80);
+    radiusSlider.setRange(25, 200).setValue(40);
     radiusSlider.getCaptionLabel().set("Size").align(ControlP5.RIGHT, ControlP5.CENTER);
 
     speedSlider = cp5.addSlider("speed"+getName()).setRange(0.01, 1).setValue(0.3).setPosition(0, 55).setSize(395, 45).setGroup(controlGroup);
@@ -24,7 +24,7 @@ class Snowstorm_Effect extends Effect
 
     bwToggle = ctrl.cp5.addToggle("bw"+getName()).setPosition(350, 105).setSize(45, 45).setGroup(controlGroup);
     bwToggle.getCaptionLabel().set("BW").align(ControlP5.CENTER, ControlP5.CENTER);
-    bwToggle.setState(true);
+    bwToggle.setState(false);
 
     calcPoints();
   }

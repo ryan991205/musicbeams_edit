@@ -1,7 +1,7 @@
 class RGBSpot_Effect extends Effect
 {
   String getName() {
-    return "RGB Spot Ryan_Edit";
+    return "RGB Spot pulsed on Music";
   }
 
   char triggeredByKey() {
@@ -32,7 +32,7 @@ class RGBSpot_Effect extends Effect
     delaySlider = cp5.addSlider("delay"+getName()).setRange(0.01,1).setValue(0.3).setPosition(0, 205).setSize(395, 45).setGroup(controlGroup);
     delaySlider.getCaptionLabel().set("Speed").align(ControlP5.RIGHT, ControlP5.CENTER);
 
-    radiusSlider = cp5.addSlider("radius"+getName()).setRange(0, 1).setValue(0.3).setPosition(0, 255).setSize(395, 45).setGroup(controlGroup);
+    radiusSlider = cp5.addSlider("radius"+getName()).setRange(0, 0.7).setValue(0.05).setPosition(0, 255).setSize(395, 45).setGroup(controlGroup);
     radiusSlider.getCaptionLabel().set("Radius").align(ControlP5.RIGHT, ControlP5.CENTER);
   }
 

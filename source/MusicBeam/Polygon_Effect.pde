@@ -45,9 +45,9 @@ class Polygon_Effect extends Effect
     valpointsSlider.getCaptionLabel().set("val").align(ControlP5.RIGHT, ControlP5.CENTER);
     valpointsSlider.setValue(8);
 
-    valpointsSlider = cp5.addSlider("val max "+getName()).setPosition(0, 55).setSize(395, 45).setRange(4, 20).setNumberOfTickMarks(9).setGroup(controlGroup);
-    valpointsSlider.getCaptionLabel().set("val").align(ControlP5.RIGHT, ControlP5.CENTER);
-    valpointsSlider.setValue(8);
+    val1pointsSlider = cp5.addSlider("val max "+getName()).setPosition(0, 55).setSize(395, 45).setRange(4, 20).setNumberOfTickMarks(9).setGroup(controlGroup);
+    val1pointsSlider.getCaptionLabel().set("val").align(ControlP5.RIGHT, ControlP5.CENTER);
+    val1pointsSlider.setValue(8);
 
     rotationSpeedSlider = cp5.addSlider("rotationspeed"+getName()).setPosition(0, 105).setSize(395, 45).setGroup(controlGroup);
     rotationSpeedSlider.setRange(-1, 1).setValue(0.3);

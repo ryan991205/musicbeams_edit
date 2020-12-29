@@ -8,6 +8,7 @@ public abstract class Effect
 
   Stage stg;
 
+
   Group controlGroup;
 
   Toggle activeToggle, randomToggle, settingsToggle;

@@ -20,17 +20,17 @@ class Derby_Effect extends Effect
   {
     super(ctrl, y);
 
-    weightSlider = cp5.addSlider("weight"+getName()).setPosition(0, 5).setSize(395, 45).setRange(0, 200).setGroup(controlGroup);
+    weightSlider = cp5.addSlider("weight"+getName()).setPosition(0, 5).setSize(395, 45).setRange(0, 100).setGroup(controlGroup);
     weightSlider.getCaptionLabel().set("Weight").align(ControlP5.RIGHT, ControlP5.CENTER);
-    weightSlider.setValue(80);
+    weightSlider.setValue(40);
 
     speedSlider = cp5.addSlider("speed"+getName()).setPosition(0, 55).setSize(395, 45).setRange(0, 1).setGroup(controlGroup);
     speedSlider.getCaptionLabel().set("speed").align(ControlP5.RIGHT, ControlP5.CENTER);
     speedSlider.setValue(0.5);
 
-    pointSlider = cp5.addSlider("point"+getName()).setPosition(0, 105).setSize(395, 45).setRange(1, 10).setGroup(controlGroup);
+    pointSlider = cp5.addSlider("point"+getName()).setPosition(0, 105).setSize(395, 45).setRange(1, 20).setGroup(controlGroup);
     pointSlider.getCaptionLabel().set("points").align(ControlP5.RIGHT, ControlP5.CENTER);
-    pointSlider.setValue(4);
+    pointSlider.setValue(8);
 
     mirrorToggle = cp5.addToggle("mirror"+getName()).setPosition(0, 155).setSize(395, 45).setGroup(controlGroup);
     mirrorToggle.getCaptionLabel().set("Mirror").align(ControlP5.CENTER, ControlP5.CENTER);

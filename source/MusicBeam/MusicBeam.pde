@@ -258,7 +258,7 @@ void initEffects()
   effectArray[7] = new LaserBurst_Effect(this, 7);
   effectArray[8] = new Polygon_Effect(this, 8);  
   effectArray[9] = new PolySpace_Effect(this, 9);
-    effectArray[10] = new Lazer_Effect(this, 10);
+    effectArray[10] = new Scanner_ZigZag(this, 10);
 
   activeSetting.activate(0);
 

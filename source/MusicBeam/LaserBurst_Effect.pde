@@ -31,7 +31,7 @@ class LaserBurst_Effect extends Effect
 
     bwToggle = ctrl.cp5.addToggle("bw"+getName()).setPosition(350, 205).setSize(45, 45).setGroup(controlGroup);
     bwToggle.getCaptionLabel().set("BW").align(ControlP5.CENTER, ControlP5.CENTER);
-    bwToggle.setState(true);
+    bwToggle.setState(false);
 
     pts = new LinkedList();
   }
